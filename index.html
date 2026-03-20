@@ -9,148 +9,126 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter Tight',sans-serif;background:#F2F0ED;color:#0A1726;min-height:100vh;font-size:16px}
 header{background:#0A1726;padding:20px 36px;display:flex;align-items:center;gap:24px}
-.logo-box{width:140px;height:48px;border:2px dashed #444;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#444;font-size:12px;letter-spacing:1px;flex-shrink:0}
 header h1{font-family:'Orbitron',sans-serif;color:#F2F0ED;font-size:22px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
 .main-tabs{background:#0A1726;padding:0 36px;display:flex;gap:2px;border-top:1px solid rgba(255,255,255,.06)}
-.mtab{padding:14px 28px;font-family:'Inter Tight',sans-serif;font-size:18px;font-weight:600;color:#6b7280;cursor:pointer;border:none;background:transparent;border-bottom:3px solid transparent;transition:all .2s;letter-spacing:.2px}
+.mtab{padding:14px 28px;font-family:'Inter Tight',sans-serif;font-size:18px;font-weight:600;color:#6b7280;cursor:pointer;border:none;background:transparent;border-bottom:3px solid transparent;transition:all .2s}
 .mtab:hover{color:#d1d5db}
 .mtab.active{color:#F04600;border-bottom-color:#F04600}
-.cbar{background:#fff;border-bottom:1px solid #e5e2de;padding:9px 36px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.cbar-label{font-size:12px;font-weight:600;color:#9ca3af;letter-spacing:.8px;text-transform:uppercase}
+.cbar{background:#fff;border-bottom:1px solid #e5e2de;padding:9px 36px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.cbar-label{font-size:14px;font-weight:600;color:#9ca3af;letter-spacing:.8px;text-transform:uppercase}
 .ctog{display:flex;border:1.5px solid #e5e2de;border-radius:6px;overflow:hidden}
-.ctog button{padding:6px 18px;font-family:'Inter Tight',sans-serif;font-size:13px;font-weight:600;border:none;background:#F2F0ED;color:#9ca3af;cursor:pointer;transition:all .15s}
+.ctog button{padding:6px 18px;font-family:'Inter Tight',sans-serif;font-size:15px;font-weight:600;border:none;background:#F2F0ED;color:#9ca3af;cursor:pointer;transition:all .15s}
 .ctog button.active{background:#0A1726;color:#fff}
-.fxwrap{display:flex;align-items:center;gap:8px}
-.fxwrap .fx-lbl{font-size:12px;color:#9ca3af;font-weight:500}
-.fxwrap input{width:80px;padding:5px 9px;border:1.5px solid #e5e2de;border-radius:6px;font-family:'Inter Tight',sans-serif;font-size:13px;font-weight:500;color:#0A1726;background:#F2F0ED;outline:none}
+.fxwrap{display:flex;align-items:center;gap:6px}
+.fx-lbl{font-size:14px;color:#9ca3af;font-weight:500}
+.fxwrap input{width:80px;padding:5px 9px;border:1.5px solid #e5e2de;border-radius:6px;font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:500;color:#0A1726;background:#F2F0ED;outline:none}
 .fxwrap input:focus{border-color:#F04600}
 main{max-width:1120px;margin:0 auto;padding:32px 24px}
 .tsec{display:none}.tsec.active{display:block}
-
-/* Fleet bar */
 .fleet-bar{background:#fff;border-radius:12px;padding:22px 26px;border:1px solid #e5e2de;margin-bottom:22px}
-.fleet-title{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;color:#0A1726;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.fleet-title{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#0A1726;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
 .fleet-row{display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
 .fl{display:flex;flex-direction:column;gap:5px}
-.fl label{font-size:11px;font-weight:600;color:#9ca3af;letter-spacing:.6px;text-transform:uppercase}
-.fl input{padding:9px 12px;border:1.5px solid #e5e2de;border-radius:7px;font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:500;color:#0A1726;background:#F8F7F5;outline:none;width:155px;transition:border .15s}
+.fl label{font-size:13px;font-weight:600;color:#9ca3af;letter-spacing:.6px;text-transform:uppercase}
+.fl input{padding:9px 12px;border:1.5px solid #e5e2de;border-radius:7px;font-family:'Inter Tight',sans-serif;font-size:16px;font-weight:500;color:#0A1726;background:#F8F7F5;outline:none;width:165px;transition:border .15s}
 .fl input:focus{border-color:#F04600;background:#fff}
 .total-chip{background:#0A1726;border-radius:9px;padding:10px 18px;margin-left:auto}
-.total-chip .tc-l{font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:3px}
-.total-chip .tc-v{font-family:'Orbitron',sans-serif;font-size:17px;font-weight:700;color:#F04600}
-
-/* Pills */
+.total-chip .tc-l{font-size:13px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:3px}
+.total-chip .tc-v{font-family:'Orbitron',sans-serif;font-size:19px;font-weight:700;color:#F04600}
 .pills{display:flex;gap:6px;margin-bottom:20px}
-.pill{padding:9px 24px;font-family:'Inter Tight',sans-serif;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;border:2px solid #e5e2de;border-radius:4px;background:#fff;color:#9ca3af;cursor:pointer;transition:all .18s;position:relative}
+.pill{padding:9px 24px;font-family:'Inter Tight',sans-serif;font-size:15px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;border:2px solid #e5e2de;border-radius:4px;background:#fff;color:#9ca3af;cursor:pointer;transition:all .18s;position:relative}
 .pill::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:transparent;border-radius:4px 0 0 4px;transition:background .18s}
 .pill:hover{border-color:#0A1726;color:#0A1726}
 .pill.active{background:#0A1726;border-color:#0A1726;color:#fff}
 .pill.active::before{background:#F04600}
-
-/* Panels */
 .pwrap{display:none}.pwrap.visible{display:block}
 .panel{background:#fff;border-radius:12px;padding:28px;border:1px solid #e5e2de;margin-bottom:22px}
-.ph{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;color:#0A1726;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #F04600;display:inline-block}
-
-/* Component table */
+.ph{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#0A1726;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #F04600;display:inline-block}
 .comp-layout{display:grid;grid-template-columns:350px 1fr;gap:32px;align-items:center}
-.comp-col-heads{display:grid;gap:12px;padding:0 0 12px;border-bottom:2px solid #f0ede9;margin-bottom:2px}
-.comp-col-head{font-size:12px;font-weight:700;color:#9ca3af;letter-spacing:.8px;text-transform:uppercase}
 .crow{display:grid;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #f0ede9}
 .crow:first-child{border-top:1px solid #f0ede9}
 .cbadge{width:28px;height:28px;border-radius:50%;background:#F04600;color:#fff;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.cname{font-size:13px;font-weight:700;color:#0A1726;line-height:1.3}
-.cname .ch{font-size:11px;color:#9ca3af;font-weight:400;margin-top:2px}
-.swrap{display:flex;flex-direction:column;gap:3px}
+.cname{font-size:15px;font-weight:700;color:#0A1726;line-height:1.3}
+.cname .ch{font-size:13px;color:#9ca3af;font-weight:400;margin-top:2px}
 .swrap input[type=range]{width:100%;accent-color:#F04600}
-.sval{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;color:#F04600;min-width:32px;text-align:center}
+.sval{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#F04600;min-width:32px;text-align:center}
 .ifield{display:flex;flex-direction:column;gap:4px}
-.ifield label{font-size:10px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.5px}
-.ifield input{padding:7px 9px;border:1.5px solid #e5e2de;border-radius:6px;font-family:'Inter Tight',sans-serif;font-size:13px;font-weight:500;color:#0A1726;background:#F8F7F5;outline:none;width:100%;transition:border .15s}
+.ifield label{font-size:12px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.5px}
+.ifield input{padding:7px 9px;border:1.5px solid #e5e2de;border-radius:6px;font-family:'Inter Tight',sans-serif;font-size:15px;font-weight:500;color:#0A1726;background:#F8F7F5;outline:none;width:100%;transition:border .15s}
 .ifield input:focus{border-color:#F04600;background:#fff}
-.csaving .csl{font-size:10px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
-.csaving .csv{font-family:'Orbitron',sans-serif;font-size:14px;font-weight:700;color:#0A1726}
-.noria-note{font-size:11px;color:#9ca3af;margin-top:16px;padding-top:12px;border-top:1px solid #f0ede9;font-style:italic}
+.csaving .csl{font-size:12px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+.csaving .csv{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;color:#0A1726}
+.noria-note{font-size:13px;color:#9ca3af;margin-top:16px;padding-top:12px;border-top:1px solid #f0ede9;font-style:italic}
 .comp-subtotal{margin-top:16px;background:#0A1726;border-radius:9px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
-.comp-subtotal .cst-l{font-size:13px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.5px}
-.comp-subtotal .cst-v{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;color:#F04600}
-
-/* Efficiency */
+.comp-subtotal .cst-l{font-size:15px;font-weight:600;color:#9ca3af;text-transform:uppercase;letter-spacing:.5px}
+.comp-subtotal .cst-v{font-family:'Orbitron',sans-serif;font-size:24px;font-weight:700;color:#F04600}
 .ecard{background:#F8F7F5;border-radius:9px;padding:18px;border:1px solid #e5e2de}
-.ecard h3{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:#0A1726;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
-.estat{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #e5e2de;font-size:13px}
+.ecard h3{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:#0A1726;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.estat{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #e5e2de;font-size:15px}
 .estat:last-of-type{border-bottom:none}
 .estat .el{color:#9ca3af;font-weight:500}
 .estat .ev{font-weight:700;color:#0A1726}
 .ehi{background:#0A1726;border-radius:7px;padding:14px 16px;margin-top:12px;display:flex;justify-content:space-between;align-items:center}
-.ehi .ehl{font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.8px}
-.ehi .ehv{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;color:#F04600}
+.ehi .ehl{font-size:13px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.8px}
+.ehi .ehv{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;color:#F04600}
 .loss-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
 .loss-card{background:#F8F7F5;border-radius:9px;padding:18px;border:1px solid #e5e2de;text-align:center}
-.lc-img{width:84px;height:84px;border:2px dashed #ccc;border-radius:10px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;color:#ccc;font-size:10px;font-weight:600}
-.lc-title{font-family:'Orbitron',sans-serif;font-size:9px;font-weight:700;color:#0A1726;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:4px;min-height:30px;display:flex;align-items:center;justify-content:center;line-height:1.3}
-.lc-sub{font-size:11px;font-weight:500;color:#9ca3af;margin-bottom:12px}
+.lc-title{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#0A1726;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px;min-height:36px;display:flex;align-items:center;justify-content:center;line-height:1.4}
+.lc-sub{font-size:16px;font-weight:500;color:#9ca3af;margin-bottom:14px}
 .loss-card input[type=range]{width:100%;accent-color:#F04600}
-.lc-labels{display:flex;justify-content:space-between;font-size:10px;font-weight:500;color:#9ca3af;margin-top:3px}
-.lc-val{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;color:#F04600;margin-top:8px}
+.lc-labels{display:flex;justify-content:space-between;font-size:14px;font-weight:500;color:#9ca3af;margin-top:4px}
+.lc-val{font-family:'Orbitron',sans-serif;font-size:32px;font-weight:700;color:#F04600;margin-top:10px}
 .total-loss-bar{background:#F8F7F5;border-radius:9px;padding:16px 20px;border:1px solid #e5e2de;display:flex;align-items:center;gap:16px;margin-bottom:22px}
-.tlb-label{font-size:13px;font-weight:600;color:#6b7280;letter-spacing:.3px}
-.tlb-val{font-family:'Orbitron',sans-serif;font-size:26px;font-weight:700;color:#F04600}
-
-/* Downtime */
+.tlb-label{font-size:15px;font-weight:600;color:#6b7280}
+.tlb-val{font-family:'Orbitron',sans-serif;font-size:28px;font-weight:700;color:#F04600}
 .td-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .sr{margin-bottom:20px}
 .sr-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
-.sr-label{font-size:12px;font-weight:600;color:#4b5563;letter-spacing:.2px}
-.sr-val{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;color:#F04600}
+.sr-label{font-size:14px;font-weight:600;color:#4b5563}
+.sr-val{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;color:#F04600}
 .sr input[type=range]{width:100%;accent-color:#F04600}
-.sr-ticks{display:flex;justify-content:space-between;font-size:10px;font-weight:500;color:#9ca3af;margin-top:3px}
-.sr-hint{font-size:11px;color:#9ca3af;margin-top:5px}
-.td-sum-title{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;color:#0A1726}
-
-/* Results */
+.sr-ticks{display:flex;justify-content:space-between;font-size:12px;font-weight:500;color:#9ca3af;margin-top:3px}
+.sr-hint{font-size:13px;color:#9ca3af;margin-top:5px}
+.td-sum-title{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;color:#0A1726}
 .rbox{background:#0A1726;border-radius:12px;padding:26px}
 .rhead{display:flex;align-items:center;gap:16px;margin-bottom:22px}
-.mbox{width:38px;height:38px;border:2px dashed #374151;border-radius:7px;display:flex;align-items:center;justify-content:center;color:#374151;font-size:9px;font-weight:700;flex-shrink:0}
-.rbox h2{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;color:#F2F0ED;letter-spacing:2px;text-transform:uppercase}
+.rbox h2{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;color:#F2F0ED;letter-spacing:2px;text-transform:uppercase}
 .sgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px}
 .si{background:rgba(255,255,255,.05);border-radius:9px;padding:16px;border:1px solid rgba(255,255,255,.08)}
-.si .sil{font-size:11px;font-weight:600;color:#6b7280;letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px}
-.si .siv{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;color:#F04600}
-.si .sis{font-size:11px;color:#4b5563;margin-top:4px}
+.si .sil{font-size:13px;font-weight:600;color:#6b7280;letter-spacing:.8px;text-transform:uppercase;margin-bottom:6px}
+.si .siv{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;color:#F04600}
+.si .sis{font-size:13px;color:#4b5563;margin-top:4px}
 .tbar{background:#F04600;border-radius:9px;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
-.tbar .tbl{font-size:14px;font-weight:700;color:#fff;letter-spacing:1.2px;text-transform:uppercase}
-.tbar .tbv{font-family:'Orbitron',sans-serif;font-size:26px;font-weight:700;color:#fff}
+.tbar .tbl{font-size:16px;font-weight:700;color:#fff;letter-spacing:1.2px;text-transform:uppercase}
+.tbar .tbv{font-family:'Orbitron',sans-serif;font-size:28px;font-weight:700;color:#fff}
 .roi-toggle{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding:12px 16px;background:rgba(255,255,255,.05);border-radius:7px;cursor:pointer;border:1px solid rgba(255,255,255,.1);transition:background .2s}
 .roi-toggle:hover{background:rgba(255,255,255,.09)}
-.roi-lbl{font-size:12px;font-weight:700;color:#9ca3af;letter-spacing:1.2px;text-transform:uppercase}
+.roi-lbl{font-size:14px;font-weight:700;color:#9ca3af;letter-spacing:1.2px;text-transform:uppercase}
 .roi-arrow{font-size:13px;color:#6b7280;transition:transform .3s}
-.roi-input{padding:9px 12px;border:1.5px solid rgba(255,255,255,.15);border-radius:7px;font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:500;color:#F2F0ED;background:rgba(255,255,255,.07);outline:none;width:100%}
+.roi-input{padding:9px 12px;border:1.5px solid rgba(255,255,255,.15);border-radius:7px;font-family:'Inter Tight',sans-serif;font-size:15px;font-weight:500;color:#F2F0ED;background:rgba(255,255,255,.07);outline:none;width:100%}
 .roi-input:focus{border-color:#F04600}
-.roi-fld-lbl{font-size:12px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
-.roi-annual{font-size:12px;font-weight:500;color:#6b7280;margin-top:6px}
+.roi-fld-lbl{font-size:14px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.roi-annual{font-size:14px;font-weight:500;color:#6b7280;margin-top:6px}
 .roi-annual span{color:#F04600;font-weight:700}
-.assump-title{font-size:11px;font-weight:700;color:#6b7280;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:12px}
-.assump-item{font-size:12px;color:#6b7280;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.assump-title{font-size:13px;font-weight:700;color:#6b7280;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:12px}
+.assump-item{font-size:14px;color:#6b7280;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05)}
 .assump-item strong{color:#d1d5db;font-weight:600}
+.comp-col-head{font-size:14px;font-weight:700;color:#9ca3af;letter-spacing:.8px;text-transform:uppercase}
 .coming{background:#fff;border-radius:12px;padding:48px;border:1px solid #e5e2de;text-align:center;color:#9ca3af}
 .coming .ct{font-family:'Orbitron',sans-serif;font-size:15px;font-weight:700;letter-spacing:2px;color:#0A1726}
 .coming .cs{font-size:14px;margin-top:8px}
 </style>
 </head>
 <body>
-
 <header>
   <img src="logo.png" alt="Flowtech" style="height:48px;width:auto">
   <h1>Calculadora de Ahorros de Flota</h1>
 </header>
-
 <div class="main-tabs">
   <button class="mtab active" onclick="switchTab('transporte',this)">Transporte</button>
   <button class="mtab" onclick="switchTab('mineria',this)">Minería</button>
   <button class="mtab" onclick="switchTab('residuos',this)">Camiones de Residuos</button>
 </div>
-
 <div class="cbar">
   <span class="cbar-label">Moneda</span>
   <div class="ctog">
@@ -159,11 +137,11 @@ main{max-width:1120px;margin:0 auto;padding:32px 24px}
   </div>
   <div class="fxwrap" id="fx-wrap">
     <span class="fx-lbl">Tipo de cambio:</span>
+    <span class="fx-lbl">$</span>
     <input type="number" id="fx-rate" value="17.50" min="1" step="0.1" oninput="recalcAll()">
     <span class="fx-lbl">MXN / USD</span>
   </div>
 </div>
-
 <main>
 
 <!-- TRANSPORTE -->
@@ -173,8 +151,8 @@ main{max-width:1120px;margin:0 auto;padding:32px 24px}
     <div class="fleet-row">
       <div class="fl"><label>Número de Unidades</label><input type="text" id="t-units" value="100" oninput="recalc('t')"></div>
       <div class="fl"><label>km / unidad / año</label><input type="text" id="t-km" value="100,000" oninput="recalc('t')"></div>
-      <div class="fl"><label>Consumo (L / 100 km)</label><input type="text" id="t-l100" value="40" oninput="recalc('t')"></div>
-      <div class="fl"><label>Precio Diésel (MXN/L)</label><input type="text" id="t-diesel" value="24.00" oninput="recalc('t')"></div>
+      <div class="fl"><label>Consumo (L / 100 km)</label><input type="text" id="t-l100" value="40.00" oninput="recalc('t')"></div>
+      <div class="fl"><label>Precio Diésel (MXN/L)</label><input type="text" id="t-diesel" value="$24.00" oninput="recalc('t')"></div>
       <div class="total-chip"><div class="tc-l">km totales flota / año</div><div class="tc-v" id="t-total-km">10,000,000 km</div></div>
     </div>
   </div>
@@ -230,7 +208,7 @@ main{max-width:1120px;margin:0 auto;padding:32px 24px}
     </div>
   </div>
   <div class="rbox">
-    <div class="rhead">      <img src="mono.png" alt="FT" style="width:38px;height:38px;object-fit:contain"><h2>Ahorro Anual Estimado — Transporte</h2></div>
+    <div class="rhead"><img src="icono.png" alt="Flowtech" style="width:38px;height:38px;object-fit:contain"><h2>Ahorro Anual Estimado — Transporte</h2></div>
     <div class="sgrid">
       <div class="si"><div class="sil">Ahorro en Componentes</div><div class="siv" id="t-rv-comp">$0</div><div class="sis">Filtros · Inyectores · Aceite · DPF · Overhaul</div></div>
       <div class="si"><div class="sil">Ahorro en Combustible</div><div class="siv" id="t-rv-efic">$0</div><div class="sis">Recuperación eficiencia ISO 11</div></div>
@@ -270,8 +248,8 @@ main{max-width:1120px;margin:0 auto;padding:32px 24px}
     <div class="fleet-row">
       <div class="fl"><label>Número de Unidades</label><input type="text" id="m-units" value="10" oninput="recalc('m')"></div>
       <div class="fl"><label>km / unidad / año</label><input type="text" id="m-km" value="50,000" oninput="recalc('m')"></div>
-      <div class="fl"><label>Consumo (L / 100 km)</label><input type="text" id="m-l100" value="120" oninput="recalc('m')"></div>
-      <div class="fl"><label>Precio Diésel (MXN/L)</label><input type="text" id="m-diesel" value="24.00" oninput="recalc('m')"></div>
+      <div class="fl"><label>Consumo (L / 100 km)</label><input type="text" id="m-l100" value="120.00" oninput="recalc('m')"></div>
+      <div class="fl"><label>Precio Diésel (MXN/L)</label><input type="text" id="m-diesel" value="$24.00" oninput="recalc('m')"></div>
       <div class="total-chip"><div class="tc-l">km totales flota / año</div><div class="tc-v" id="m-total-km">500,000 km</div></div>
     </div>
   </div>
@@ -370,11 +348,11 @@ main{max-width:1120px;margin:0 auto;padding:32px 24px}
 var cur = 'USD';
 var COMPS = {
   t:[
-    {id:'filtro',n:'Filtro OEM', hint:'c/ km recorridos', defMult:10,maxMult:15,intBase:10000, costUSD:19,   labels:[1,5,10,15]},
-    {id:'iny',   n:'Inyector',  hint:'set / unidad',     defMult:6, maxMult:10,intBase:150000,costUSD:1000, labels:[1,4,7,10]},
-    {id:'motor', n:'Motor',     hint:'overhaul / unidad',defMult:2, maxMult:10,intBase:400000,costUSD:4400, labels:[1,4,7,10]},
-    {id:'aceite',n:'Aceite',    hint:'cambio / km',      defMult:3, maxMult:10,intBase:15000, costUSD:250,  labels:[1,4,7,10]},
-    {id:'dpf',   n:'DPF',       hint:'servicio / km',    defMult:4, maxMult:10,intBase:150000,costUSD:444,  labels:[1,4,7,10]}
+    {id:'filtro',n:'Filtro OEM', hint:'c/ km recorridos', defMult:10,maxMult:15,intBase:10000, costUSD:19,    labels:[1,5,10,15]},
+    {id:'iny',   n:'Inyector',  hint:'set / unidad',     defMult:6, maxMult:10,intBase:150000,costUSD:1000,  labels:[1,4,7,10]},
+    {id:'motor', n:'Motor',     hint:'overhaul / unidad',defMult:2, maxMult:10,intBase:400000,costUSD:4400,  labels:[1,4,7,10]},
+    {id:'aceite',n:'Aceite',    hint:'cambio / km',      defMult:3, maxMult:10,intBase:15000, costUSD:250,   labels:[1,4,7,10]},
+    {id:'dpf',   n:'DPF',       hint:'servicio / km',    defMult:4, maxMult:10,intBase:150000,costUSD:444,   labels:[1,4,7,10]}
   ],
   m:[
     {id:'filtro',n:'Filtro OEM', hint:'c/ km recorridos', defMult:10,maxMult:15,intBase:10000, costUSD:800,   labels:[1,5,10,15]},
@@ -396,7 +374,7 @@ function applyFmt(el){
   var raw=parseFloat(el.value.replace(/[$,]/g,''));
   if(isNaN(raw)) return;
   var t=el.dataset.fmt||'int';
-  if(t==='money') el.value='$'+Math.round(raw).toLocaleString('es-MX');
+  if(t==='money') el.value='$'+raw.toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
   else if(t==='decimal') el.value=raw.toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
   else el.value=Math.round(raw).toLocaleString('es-MX');
 }
@@ -421,18 +399,18 @@ function buildComp(p){
     html+='<div class="crow" style="display:grid;grid-template-columns:'+cols+';gap:12px">'
       +'<div class="cbadge">'+(i+1)+'</div>'
       +'<div class="cname">'+c.n+'<div class="ch">'+c.hint+'</div></div>'
-      +'<div class="swrap"><div style="display:flex;align-items:center;gap:8px">'
+      +'<div style="display:flex;flex-direction:column;gap:4px"><div style="display:flex;align-items:center;gap:8px">'
       +'<div style="flex:1;min-width:0">'
-      +'<input type="range" id="'+p+'-ts-'+c.id+'" min="1" max="'+c.maxMult+'" value="'+c.defMult+'" step="1" style="width:100%" oninput="updS(\''+p+'\',\''+c.id+'\');recalc(\''+p+'\')">'
+      +'<input type="range" id="'+p+'-ts-'+c.id+'" min="1" max="'+c.maxMult+'" value="'+c.defMult+'" step="1" style="width:100%;accent-color:#F04600" oninput="updS(\''+p+'\',\''+c.id+'\');recalc(\''+p+'\')">'
       +'<div style="display:flex;justify-content:space-between;margin-top:2px">'
-      +c.labels.map(function(t){ return '<span style="font-size:10px;color:#9ca3af;font-weight:500">'+t+'x</span>'; }).join('')
+      +c.labels.map(function(t){ return '<span style="font-size:11px;color:#9ca3af;font-weight:500">'+t+'x</span>'; }).join('')
       +'</div></div>'
       +'<span class="sval" id="'+p+'-tsv-'+c.id+'">'+c.defMult+'x</span>'
       +'</div></div>'
       +'<div class="ifield"><label>Int. base ISO 22 (km)</label>'
       +'<input type="text" id="'+p+'-ti-'+c.id+'" value="'+c.intBase.toLocaleString('es-MX')+'" oninput="recalc(\''+p+'\')"></div>'
       +'<div><div class="ifield"><label>Costo / '+cn+' ('+cur+')</label>'
-      +'<input type="text" id="'+p+'-tc-'+c.id+'" value="$'+dispCostVal(c.costUSD).toLocaleString('es-MX')+'" oninput="recalc(\''+p+'\')"></div>'
+      +'<input type="text" id="'+p+'-tc-'+c.id+'" value="$'+dispCostVal(c.costUSD).toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2})+'" oninput="recalc(\''+p+'\')"></div>'
       +'<div class="csaving" style="margin-top:8px"><div class="csl">Ahorro anual</div>'
       +'<div class="csv" id="'+p+'-ca-'+c.id+'">—</div></div></div>'
       +'</div>';
@@ -444,11 +422,13 @@ function buildComp(p){
 }
 
 function updS(p,id){ document.getElementById(p+'-tsv-'+id).textContent=document.getElementById(p+'-ts-'+id).value+'x'; }
+
 function updEf(p){
   var tot=0;
   for(var i=1;i<=4;i++){ var v=parseFloat(document.getElementById(p+'-ef-s'+i).value)||0; document.getElementById(p+'-ef-v'+i).textContent=v.toFixed(1)+'%'; tot+=v; }
   document.getElementById(p+'-ef-total').textContent=tot.toFixed(1)+'%';
 }
+
 function updTd(p){
   var rate=getRate(), cMXN=parseInt(document.getElementById(p+'-td-s3').value)||0;
   var dc=cur==='USD'?Math.round(cMXN/rate):cMXN;
@@ -459,21 +439,25 @@ function updTd(p){
   document.getElementById(p+'-td-mid').textContent=cur==='USD'?'$'+Math.round(17500/rate).toLocaleString('es-MX'):'$17,500';
   document.getElementById(p+'-td-max').textContent=cur==='USD'?'$'+Math.round(35000/rate).toLocaleString('es-MX'):'$35,000';
 }
+
 function toggleRoi(p){
   var s=document.getElementById(p+'-roi-section'), a=document.getElementById(p+'-roi-arrow'), o=s.style.display==='none';
   s.style.display=o?'block':'none'; a.style.transform=o?'rotate(180deg)':'rotate(0deg)'; if(o) recalc(p);
 }
+
 function switchTab(id,btn){
   document.querySelectorAll('.tsec').forEach(function(e){e.classList.remove('active');});
   document.querySelectorAll('.mtab').forEach(function(e){e.classList.remove('active');});
   document.getElementById('tab-'+id).classList.add('active'); btn.classList.add('active');
 }
+
 function showPanel(p,name,btn){
   var tid=p==='t'?'transporte':'mineria';
   ['componentes','eficiencia','tiempomuerto'].forEach(function(n){ document.getElementById(p+'-pw-'+n).classList.remove('visible'); });
   document.querySelectorAll('#tab-'+tid+' .pills .pill').forEach(function(b){b.classList.remove('active');});
   document.getElementById(p+'-pw-'+name).classList.add('visible'); btn.classList.add('active');
 }
+
 function setCurrency(c){
   var rate=getRate(),prev=cur; cur=c;
   document.getElementById('btn-mxn').classList.toggle('active',c==='MXN');
@@ -482,15 +466,17 @@ function setCurrency(c){
     COMPS[p].forEach(function(cp){
       var el=document.getElementById(p+'-tc-'+cp.id); if(!el) return;
       var v=parseFloat(el.value.replace(/[$,]/g,''))||0;
-      var nv=prev==='MXN'&&c==='USD'?Math.round(v/rate):Math.round(v*rate);
-      el.value='$'+nv.toLocaleString('es-MX');
+      var nv=prev==='MXN'&&c==='USD'?Math.round(v/rate*100)/100:Math.round(v*rate);
+      el.value='$'+nv.toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2});
       var lbl=el.previousElementSibling; if(lbl) lbl.innerHTML=lbl.innerHTML.replace(prev,c);
     });
     updTd(p);
   });
   recalcAll();
 }
+
 function recalcAll(){ recalc('t'); recalc('m'); }
+
 function recalc(p){
   var units=numVal(p+'-units'), kmpu=numVal(p+'-km'), l100=numVal(p+'-l100'), diesel=numVal(p+'-diesel');
   var rate=getRate(), totalKm=units*kmpu, totalL=totalKm*l100/100;
@@ -554,10 +540,12 @@ function recalc(p){
     if(ae) ae.innerHTML=rows.map(function(r){ return '<div class="assump-item"><strong>'+r[0]+'</strong> · '+r[1]+'</div>'; }).join('');
   }
 }
+
 buildComp('t'); buildComp('m');
 updEf('t'); updEf('m'); updTd('t'); updTd('m');
 ['t-units','t-km','t-l100','t-diesel','m-units','m-km','m-l100','m-diesel'].forEach(function(id){
-  bindFmt(id,(id.indexOf('diesel')>-1||id.indexOf('l100')>-1)?'decimal':'int');
+  var t=id.indexOf('diesel')>-1?'money':id.indexOf('l100')>-1?'decimal':'int';
+  bindFmt(id,t);
 });
 recalcAll();
 </script>
